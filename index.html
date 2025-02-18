@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share Your Files Securely</h2>
+                <div class="form-input">
+                    <button id="sender-start-con-btn">Create Room</button>
+                </div>
+                <div class="form-input" id="join-id"></div>
+            </div>
+        </div>
+        <div class="screen fs-screen">
+            <div class="file-input">
+                <label for="file-input">Click here to select files for sharing</label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared Files:</div>
+            </div>
+            <div class="chat-container">
+                <h3>Chat</h3>
+                <div class="chat-box" id="chat-box"></div>
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-chat-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
